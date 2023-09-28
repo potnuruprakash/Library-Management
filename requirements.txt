@@ -1,9 +1,9 @@
 asgiref==3.2.7
-Django==3.0.5
+# Django==3.0.5
 dj-database-url==0.5.0
 django-widget-tweaks==1.4.8
 psycopg2-binary==2.9.3
 pytz==2020.1
 sqlparse==0.3.1
-guincorn==21.2.0
-whitenoise==6.5.0
+# guincorn==21.2.0
+# whitenoise==6.5.0
