@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+ <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section.search-bar input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+}
+
+section.search-bar input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+section.featured-books {
+    text-align: center;
+    margin: 20px 0;
+}jnb
+
+.book {
+    display: inline-block;
+    margin: 20px;
+    text-align: left;
+}
+
+.book img {
+    width: 150px;
+    height: 200px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+ </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Library</h1>
+        <nav>
+            <ul>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="borrow.html">Borrow</a></li>
+                <li><a href="return.html">Return</a></li>
+                <li><a href="members.html">Members</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-bar">
+        <h2>Search for Books</h2>
+        <form action="search.php" method="get">
+            <input type="text" name="query" placeholder="Search by title, author, or ISBN">
+            <input type="submit" value="Search">
+        </form>
+    </section>
+
+    <section class="featured-books">
+        <h2>Featured Books</h2>
+        <div class="book">
+            <img src="book1.jpg" alt="Book 1">
+            <h3>Book Title 1</h3>
+            <p>Author: Author Name</p>
+        </div>
+        <div class="book">
+            <img src="book2.jpg" alt="Book 2">
+            <h3>Book Title 2</h3>
+            <p>Author: Author Name</p>
+        </div>
+        <!-- Add more featured books here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Library Management System</p>
+    </footer>
+</body>
+</html>

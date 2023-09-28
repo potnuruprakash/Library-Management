@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .bs-example {
+            margin: 0px;
+
+        }
+
+        .navbar-brand {
+            font-size: 20px;
+            font-family: sans-serif;
+
+        }
+
+        /* Add this CSS for the line animation */
+        .underline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            height: 0;
+            background-color: #fff;
+            /* Color of the line */
+            transition: width 0.3s ease;
+            /* Animation duration and easing */
+        }
+
+        .nav-item:hover .underline {
+            width: 100%;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" style="padding: 0rem;">
+            <img src="/static/images/sgpv.png" alt="logo"
+                style="width: 38px; height: 37px; margin: 10px;  border-radius: 50%;">
+            <a href="/" class="navbar-brand">Sgpv Library</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="/adminlogin" class="nav-item nav-link">Admin</a>
+                    <a href="/studentlogin" class="nav-item nav-link">Student</a>
+                    <div class="underline"></div> <!-- Line animation div -->
+                </div>
+
+                <div class="navbar-nav">
+                    <a href="/aboutus" class="nav-item nav-link">About Us</a>
+                    <!-- <a href="contactus" class="nav-item nav-link">Contact Us</a> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+</html>

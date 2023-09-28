@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Student-Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style media="screen">
+    body {
+      height: 100%;
+    }
+
+    .btn-circle.btn-xl {
+      width: 70px;
+      height: 70px;
+      padding: 10px 16px;
+      border-radius: 35px;
+      font-size: 24px;
+      line-height: 1.33;
+    }
+
+    .color:not(:disabled):not(.disabled).active,
+    .color:not(:disabled):not(.disabled):active,
+    .show>.color.dropdown-toggle {
+      width: 15rem;
+      border-radius: 30px;
+    }
+
+    .btn-circle {
+      width: 30px;
+      height: 30px;
+      padding: 6px 0px;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.42857;
+    }
+
+    .display-4 {
+      padding-top: 4rem;
+    }
+
+    .jump {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-align: center;
+      background-color: #A0BFE0;
+      overflow: hidden;
+    }
+
+    .add-home {
+      background-color: #A0BFE0;
+    }
+
+    .jump h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin-top: 19px;
+    }
+
+    #names:hover {
+      transform: scale(1.2);
+      box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-body {
+      background-color: #393E46;
+    }
+
+    .can {
+      background-color: #4ECCA3;
+      border-radius: 5px;
+    }
+
+    .mb-4 {
+      padding: 2rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .col-md-4 {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      .card {
+        margin-bottom: 1rem;
+      }
+    }
+
+    footer {
+      position: relative;
+      left: 0%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="add-home">
+    {% include "library/navbaradmin.html" %}
+    <br>
+    <br>
+    <center>
+      <h3 style="margin-bottom: 0px;" class='alert alert-success'>Welcome to Online library !</h3>
+    </center>
+    <div class="jump">
+      <h1 class="display-4"><b> Hello {{user.first_name}} !</b></h1>
+      <p class="lead text-dark"> As you are a student, you can see how many books you have taken from the library with fines and much more...</p>
+      <hr class="my-4">
+      <div class="container mb-5 py-5">
+        <div class="container mb-5 py-2">
+          <h3 class="heading">Options Available For You</h3>
+          <div class="d-flex justify-content-center">
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="can"></div>
+                <div class="card-body text-center">
+                  <a href="viewbook" class="btn text-light btn-lg active" id="names" role="button" aria-pressed="true">Books In Library</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="can"></div>
+                <div class="card-body text-center">
+                  <a href="viewissuedbookbystudent" class="btn text-light btn-lg active" id="names" role="button" aria-pressed="true">View Issued Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include "library/footer.html" %}
+  </div>
+</body>
+
+</html>

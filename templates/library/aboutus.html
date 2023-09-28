@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Our Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            color: white;
+            padding: 3rem;
+        }
+
+        .navbar {
+            /* Your existing navbar styles go here */
+            background-color: #222;
+            padding: 1rem;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 2rem;
+        }
+
+        .team-member {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            width: calc(50% - 20px); /* Two columns with gap */
+            max-width: 300px; /* Limit the maximum width */
+            text-align: center;
+            background-color: #7D7C7C;
+            border-radius: 2rem;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%; /* Ensure images don't exceed their container */
+            height: auto;
+            border-radius: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+            box-shadow: 12px 12px 10px rgba(0, 0, 1, 1.0);
+        }
+
+        h1 {
+            text-align: center;
+            padding: 1rem;
+            color: #333;
+        }
+
+        p {
+            color: #191717;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+       {% include "library/aboutnavbar.html" %}
+    </div>
+
+    <div class="header">
+        <h1>Meet Our Team</h1>
+    </div>
+
+    <div class="team-container">
+        <div class="team-member">
+            <img src="/static/images/lead.png" alt="Narasinga">
+            <h2>Narasinga Rao</h2>
+            <p>Lead</p>
+            <p>Handling with Back-end. Am the Backend Developer</p>
+        </div>
+
+        <div class="team-member">
+            <img src="/static/images/co-lead.png" alt="Prakash">
+            <h2>Prakash</h2>
+            <p>CO-Lead</p>
+            <p>Handling With Front-End Am the Front-End Developer</p>
+        </div>
+    </div>
+
+    <div class="team-container">
+        <div class="team-member">
+            <img src="/static/images/member1.png" alt="Varalaxmi">
+            <h2>Vara Laxmi</h2>
+            <p>Member</p>
+            <p>Handling With Front-End Am the Front-End Developer</p>
+        </div>
+
+        <div class="team-member">
+            <img src="/static/images/member2.png" alt="Hemanth">
+            <h2>Hemanth</h2>
+            <p>Member</p>
+            <p>My role is Tester.</p>
+        </div>
+
+        <div class="team-member">
+            <img src="/static/images/member2.jpg" alt="Yaswanth">
+            <h2>Yaswanth</h2>
+            <p>Member</p>
+            <p>Handling with HTML.</p>
+        </div>
+
+        <div class="team-member">
+            <img src="/static/images/member4.png" alt="Gayatri">
+            <h2>Gayatri</h2>
+            <p>Member</p>
+            <p>My role is Tester.</p>
+        </div>
+    </div>
+</body>
+</html>
